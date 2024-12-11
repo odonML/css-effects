@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #2e2e2e;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(188, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  animation: rotation infinite 0.8s linear;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px 0px #b4b4b414;
+
+  background-color: rgb(227, 51, 51);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
